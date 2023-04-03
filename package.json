@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -18,5 +20,7 @@
     "sass": "^1.60.0",
     "typescript": "5.0.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
