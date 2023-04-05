@@ -1,8 +1,8 @@
-
+import Header from './header'
 export default function Home() {
   return (
    <>
-      <h1>Hamburgueria</h1>
+      <Header/>
    </>
   )
 }
