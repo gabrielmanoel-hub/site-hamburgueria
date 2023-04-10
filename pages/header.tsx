@@ -6,14 +6,8 @@ export default function Header() {
         <>
             <header className={style.header}>
                 <a href='/'>
-                   {logo && ( <Image 
-                        src={logo}
-                        alt="logo" 
-                        priority
-                        />)}
-                        
+                   {true && ( <Image src={logo} alt="logo" priority />)}
                 </a>
-                <div></div>
             </header>
         </>
     )
