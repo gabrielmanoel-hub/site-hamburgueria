@@ -46,3 +46,6 @@ Renderização automática do lado do servidor: o Next.js inclui uma estrutura d
     
 
 Referência [stack overflow](https://stackoverflow.com/questions/58603201/jest-cannot-load-svg-file)
+
+## ERRO Image is missing required "src"
+o corre quando o **src** não tem imagem 
