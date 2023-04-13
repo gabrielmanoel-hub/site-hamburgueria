@@ -1,15 +1,12 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Header from '../pages/header'
 
 
-interface Props {
-  src: string,
-  alt: string
-}
+
 
 jest.mock('next/image', () => {
-  return ({ src, alt }: Props) => {
+  return ({ src, alt }: { src: string, alt: string }) => {
     return <img src={src} alt={alt} />;
   };
 });
