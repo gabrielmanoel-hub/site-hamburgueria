@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__mocks__/fileMock.ts", "__mocks__/styleMock.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__mocks__/fileMock.tsx", "__mocks__/styleMock.ts"],
   "exclude": ["node_modules", "next"],
 }
