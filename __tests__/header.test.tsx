@@ -1,14 +1,9 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Header from '../pages/header'
-import  {imageMock}  from '@/__mocks__/imgMock';
-jest.mock(imageMock)
+import {Img} from '../__mocks__/imgMock';
 
-// jest.mock('next/image', () => {
-//   return ({ src, alt }: { src: string, alt: string }) => {
-//     return <img src={src} alt={alt} />;
-//   };
-// });
+jest.mock('next/image')
 
 describe('Header component', () => {
   it('should render logo and priority elements', () => {
@@ -25,14 +20,11 @@ describe('Header component', () => {
   });
 
   it("renders an image", () => {
-    const  { container } = render(<Header />);
+    const  { container } = render(<Img />);
     const img = container.querySelector('img')
-    const alt = img?.getAttribute('alt')
-    // expect(alt).toBe('logo');
-    // console.log(imageMock)
-    expect(imageMock).toBe('')
-
- });  
+    const alt = img?.hasAttribute('src')
+    expect(alt).toBe(true)
+  });  
 });
 
 

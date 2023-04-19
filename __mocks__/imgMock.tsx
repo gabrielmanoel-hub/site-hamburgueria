@@ -1,7 +1,5 @@
-import Image from "next/image";
 
-export const imageMock = ({ src, alt }: { src: string, alt: string }) => { 
-    return <Image src={src} alt={alt} />;
+export const Img = () =>  {
+    return <img src= 'img' alt= 'logo' />;
 };
 
-// module.exports = imageMock

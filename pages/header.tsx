@@ -8,7 +8,7 @@ export default function Header() {
             <header className={style.header}>
                 <a href='/'>
                    {/* {logo && ( <Image  src={logo} alt= 'logo' priority />)} */}
-                   <Image  src= {logo} alt= 'logo' priority = {true} />
+                   <Image src={logo} alt='logo' priority = {true} />
                 </a>
             </header>
         </>

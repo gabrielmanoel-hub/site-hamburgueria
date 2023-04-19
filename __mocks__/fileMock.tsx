@@ -1,9 +1,9 @@
-module.exports = {
-    src: '/img.svg',
-    height: 24,
-    width: 24,
-    blurDataURL: 'data:image/png;base64,imagedata',
-  }
+// module.exports = {
+//     src: '/img.svg',
+//     height: 24,
+//     width: 24,
+//     blurDataURL: 'data:image/png;base64,imagedata',
+//   }
 
   /**
    * src: uma string que representa o caminho da imagem SVG.
